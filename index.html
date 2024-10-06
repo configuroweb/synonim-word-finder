@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synonym Word Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Synonym Word Finder</h1>
+      <div class="word-app-searchbox">
+        <div class="container word-app-searchbox-content">
+          <form id="word-search-form">
+            <div class="form-element">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Search Synonyms..."
+                name="search_word"
+              />
+              <button type="submit" id="submit-btn">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="spinner">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <style>
+            .spinner_aj0A {
+              transform-origin: center;
+              animation: spinner_KYSC 0.75s infinite linear;
+            }
+            @keyframes spinner_KYSC {
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style>
+          <path
+            d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"
+            class="spinner_aj0A"
+          />
+        </svg>
+      </div>
+
+      <div class="word-app-body">
+        <div class="container word-app-body-content">
+          <div id="word-list"></div>
+          <button type="button" id="copy-btn">Copy</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by <a href="https://appscweb.com" target="_blank">AppsCWeb</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
